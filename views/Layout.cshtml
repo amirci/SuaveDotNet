@@ -4,9 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winnipeg Dot Net User Group</title>
-    @*@Styles.Render("~/Content/css")
-    @RenderSection("styles", required: false)
-    @Scripts.Render("~/bundles/modernizr")*@
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/font-awesome.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/styles.css">
 </head>
 <body>
     @Include("_navigation")
@@ -15,7 +14,7 @@
         @RenderBody()
     </section>
 
-    @*@{ Html.RenderPartial("_footer"); }*@
+    @Include("_footer")
 
     @*@Scripts.Render("~/scripts/date.js")
     @Scripts.Render("~/bundles/jquery")

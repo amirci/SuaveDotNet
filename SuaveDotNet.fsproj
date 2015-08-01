@@ -61,6 +61,7 @@
     <None Include="Views\Layout.cshtml" />
     <None Include="Views\Index.cshtml" />
     <None Include="Views\_navigation.cshtml" />
+    <None Include="Views\_footer.cshtml" />
     <None Include="Assets\Images\logo_2013.png" />
   </ItemGroup>
   <ItemGroup>

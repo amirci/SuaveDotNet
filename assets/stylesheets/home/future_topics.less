@@ -1,0 +1,52 @@
+#future-topics {
+	.event-box(#ffd7bb, #ffcaa1, #bc8354, #cd8d68);
+	#topic-list {
+		margin-left: -20px;
+		font-size: 1em;
+        padding: 0;
+
+		li {
+			border-top: 1px solid #e1a579;
+			line-height: 30px;
+			padding-left: 20px;
+
+            &:last-child {
+                border-bottom: 1px solid #e1a579;
+            }
+			.topic {
+				color: #9e5114;
+				font-weight: 600;   
+                width: 200px;
+                display: inline-block;
+			}
+
+            @media (max-width: 1024px) {
+                .topic {
+                    width: 160px;
+                }
+            }
+			.vote-topic {
+				float: right;
+				border-radius:5px;
+				background: @white;
+                border: 1px solid;
+				color: #e1a579;
+				margin-right: 5px;
+				margin-top: 5px;
+				font-size: 0.8em;
+				line-height: 20px;
+				padding: 0px 5px;
+                text-align:center;
+                width: 40px;
+
+                &:hover {
+                    text-decoration: none;
+				    color: #9e5114;
+                    font-weight:600;
+                }
+			}
+		}
+	}
+
+}
+

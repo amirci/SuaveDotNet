@@ -83,7 +83,9 @@ let wpgDotNet =
         ]        
     ]
 
-[<EntryPoint>]
-let main argv = 
-    startWebServer defaultConfig wpgDotNet
-    0 // return an integer exit code
+//[<EntryPoint>]
+//let main argv = 
+//    startWebServer defaultConfig wpgDotNet
+//    0 // return an integer exit code
+
+startWebServer defaultConfig wpgDotNet
