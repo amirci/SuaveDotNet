@@ -54,13 +54,14 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="App.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />
     <None Include="Views\Layout.cshtml" />
     <None Include="Views\Index.cshtml" />
     <None Include="Views\_navigation.cshtml" />
-    <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Program.fs" />
+    <None Include="Assets\Images\logo_2013.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
