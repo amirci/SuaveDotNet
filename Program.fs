@@ -74,14 +74,12 @@ let razorView<'a> (path:string) (model : 'a) =
         }
 
 
-let browseAssets =  Files.browse
-
 let wpgDotNet = 
 
     choose [
         GET >>= choose [
             path "/" >>= razorView "index.cshtml" {foo="Something"}
-            pathRegex "(.*)\.(css|png)" >>= browseAssets
+            pathRegex "(.*)\.(css|png)" >>= Files.browse assetsFolder
         ]        
     ]
 
