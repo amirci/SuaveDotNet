@@ -1,0 +1,15 @@
+﻿    <section id="past-events">
+        <header>past.events</header>
+        <ul id="event-list" data-bind="foreach: events">
+            <li>
+                <i class="icon-check"></i>
+                <a href="#" data-bind="text: title, attr: { href: url }" target="_blank"></a>
+            </li>
+        </ul>   
+        <footer>
+            <a data-bind="attr: { href: organizerUrl }" target="_blank" href="#">
+                View all
+                <i class="icon-chevron-sign-right"></i>
+            </a>
+        </footer>
+    </section>

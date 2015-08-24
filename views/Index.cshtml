@@ -2,6 +2,14 @@
     Layout = "layout.cshtml";
 }
 
+@*@section scripts {
+    @Scripts.Render("~/bundles/vm-home")
+}*@
+
 <section id="events">
-    Hello .NET UG @Model.foo
+    @Include("_next_event")
+
+    @Include("_past_events")
+
+    @Include("_future_topics")
 </section>

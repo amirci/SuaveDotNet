@@ -1,0 +1,41 @@
+﻿    <section id="next-event">
+        <header>next.event</header>
+        <section class="event content">
+            <!-- ko if: loading -->
+                Finding about next event...
+                <i class="icon-spin icon-spinner"></i>
+            <!-- /ko -->
+            <!-- ko if: !loading() && eventPending -->
+                Next event in progress, please stay tuned!
+            <!-- /ko -->
+            <!-- ko ifnot: eventPending -->
+            <!-- ko with: event -->
+                <header data-bind="text: title" class="title"></header>
+                <article data-bind="html: description" class='description'></article>
+                <section class="location">
+                    <span class="image">
+                        <i class="icon-calendar"></i>
+                    </span>
+                    <section class="calendar">
+                        <div data-bind="text: fDate"></div>
+                        <div data-bind="text: time"></div> 
+                    </section>
+                    <br/>
+                    <span class="image">
+                        <i class="icon-map-marker"></i>
+                    </span>
+                    <section class="venue">
+                        <div data-bind="text: venue"></div>
+                        <div data-bind="text: address"></div>
+                    </section>
+                </section>
+            <!-- /ko -->
+            <!-- /ko -->
+        </section>
+        <footer>
+            <a href="#" data-bind="visible: !eventPending(), attr: { href: event().url }" target="_blank">
+                Count Me In!
+                <i class="icon-chevron-sign-right"></i>
+            </a>
+        </footer>
+    </section>    
