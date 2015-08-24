@@ -79,7 +79,7 @@ let wpgDotNet =
     choose [
         GET >>= choose [
             path "/" >>= razorView "index.cshtml" {foo="Something"}
-            pathRegex "(.*)\.(css|png)" >>= Files.browse assetsFolder
+            pathRegex "(.*)\.(css|png|eot|svg|ttf|woff|otf)" >>= Files.browse assetsFolder
         ]        
     ]
 
